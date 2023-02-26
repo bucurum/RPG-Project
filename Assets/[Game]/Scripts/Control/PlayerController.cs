@@ -7,18 +7,6 @@ namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
-        private void MoveToCursor()
-        {
-            RaycastHit hit;
-            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
-            //Debug.DrawRay(lastRay.origin, lastRay.direction * 100);
-
-            if (hasHit)
-            {
-                GetComponent<Mover>().MoveTo(hit.point);
-            }
-        }
-
         private static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -26,11 +14,11 @@ namespace RPG.Control
 
         void Update()
         {
-            InteractWithMovement();
-            InteractWithCombat();
+            if(InteractWithCombat()) return; 
+            if(InteractWithMovement()) return;
         }
 
-        private void InteractWithCombat()
+        private bool InteractWithCombat() //we set this to bool because when player over hover the enemy it tell us the object is interactable or not
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             foreach (RaycastHit hit in hits)
@@ -38,20 +26,31 @@ namespace RPG.Control
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
                 if (target == null) continue;
                 
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(1))
                 {
                     GetComponent<Fighter>().Attack(target);
                 }
-                
+                return true;
             }
+            return false;
         }
 
-        private void InteractWithMovement()
+        private bool InteractWithMovement() // we set this to bool because when player over hover the egde of the world or cant reachable point in the world it tell us the point is reachable or not
         {
-            if (Input.GetMouseButton(1))
+            RaycastHit hit;
+            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            //Debug.DrawRay(lastRay.origin, lastRay.direction * 100);
+
+            if (hasHit)
             {
-                MoveToCursor();
+                if (Input.GetMouseButton(1))
+                {
+                    GetComponent<Mover>().MoveTo(hit.point);
+                }
+                return true;
+                
             }
+            return false;
         }
     }
 }
