@@ -1,3 +1,4 @@
+using RPG.Core;
 using RPG.Movement;
 using UnityEngine;
 
@@ -14,12 +15,21 @@ namespace RPG.Combat
         }
         public void Attack(CombatTarget combatTarget)
         {
+            GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.transform;
+        }
+        public void CancelAttack()
+        {
+            target = null;
         }
         void Update()
         {
-            bool isInRange = Vector3.Distance(transform.position , target.position) < weaponRange;
-            if (target != null && !isInRange)
+            if (target == null)
+            {
+                return;
+            }
+
+            if (!GetsInRange())
             {
                 mover.MoveTo(target.position);
             }
@@ -27,6 +37,11 @@ namespace RPG.Combat
             {
                 mover.Stop();
             }
+        }
+
+        private bool GetsInRange()
+        {
+            return Vector3.Distance(transform.position, target.position) < weaponRange;
         }
     }
 }
