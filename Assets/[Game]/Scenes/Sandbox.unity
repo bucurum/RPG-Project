@@ -196,6 +196,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 732589516, guid: 2feadd4c1ab89a048bc0014dac9eb891, type: 3}
+      propertyPath: healthPoint
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 29550748861514288, guid: 2feadd4c1ab89a048bc0014dac9eb891, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -654,29 +658,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 409538, guid: 5a346deceb21d0c4781e67a70fbcc1f6, type: 3}
   m_PrefabInstance: {fileID: 657805872}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &687538997 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8917616067677045395, guid: 4f44f07d795cc7b47826f5491bb18102, type: 3}
-  m_PrefabInstance: {fileID: 2592360377056817453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &687538998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7727556499597638457, guid: 4f44f07d795cc7b47826f5491bb18102, type: 3}
   m_PrefabInstance: {fileID: 2592360377056817453}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &687538999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687538997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a21efb12f6b9a49aece596e7e0db0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,36 +756,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &732589515 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 29550748861514288, guid: 2feadd4c1ab89a048bc0014dac9eb891, type: 3}
-  m_PrefabInstance: {fileID: 153235959}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &732589516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732589515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a21efb12f6b9a49aece596e7e0db0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 20
---- !u!114 &732589517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732589515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0662a6adec227344983dc01e1e7952e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &738866754
 GameObject:
   m_ObjectHideFlags: 0
