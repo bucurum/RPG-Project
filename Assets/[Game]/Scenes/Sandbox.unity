@@ -1543,7 +1543,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 732589516, guid: 2feadd4c1ab89a048bc0014dac9eb891, type: 3}
       propertyPath: healthPoint
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 29550748861514288, guid: 2feadd4c1ab89a048bc0014dac9eb891, type: 3}
       propertyPath: m_Name
@@ -2241,6 +2241,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 687538999, guid: 4f44f07d795cc7b47826f5491bb18102, type: 3}
+      propertyPath: healthPoint
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 7727556499597638457, guid: 4f44f07d795cc7b47826f5491bb18102, type: 3}
       propertyPath: m_RootOrder
       value: 2

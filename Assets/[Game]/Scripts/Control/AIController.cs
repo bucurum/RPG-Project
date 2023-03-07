@@ -8,13 +8,19 @@ namespace RPG.Control
         [SerializeField] float chaseDistance = 5f;
         GameObject player;
         Fighter fighter;
+        Health health;
         void Start()
         {
             fighter = GetComponent<Fighter>();
             player = GameObject.FindWithTag("Player");
+            health = GetComponent<Health>();
         }
         void Update()
         {
+            if (health.IsDead())
+            {
+                return;
+            }
             if (InAttackRangeOfPlayer() && fighter.CanAttack(player))
             {
                 Debug.Log(gameObject.name + " is chasing");

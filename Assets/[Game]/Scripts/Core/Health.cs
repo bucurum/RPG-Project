@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Core;
 using UnityEngine;
 
 namespace RPG.Combat
@@ -28,6 +29,7 @@ namespace RPG.Combat
             {
                 GetComponent<Animator>().SetTrigger("die");
                 isDeath = true;
+                GetComponent<ActionScheduler>().CancelCurrentAction();
             }
             else
             {
