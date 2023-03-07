@@ -2243,7 +2243,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 687538999, guid: 4f44f07d795cc7b47826f5491bb18102, type: 3}
       propertyPath: healthPoint
-      value: 50
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7727556499597638457, guid: 4f44f07d795cc7b47826f5491bb18102, type: 3}
       propertyPath: m_RootOrder

@@ -13,7 +13,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &732589516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+  suspicionTime: 5
 --- !u!114 &3865147086394124668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7eb179eea0f2441b35cbced573726b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponRange: 2
+  weaponRange: 1.5
   timeBetweenAttacks: 1
   DamageAmounth: 5
 --- !u!1001 &7273096885313331109
