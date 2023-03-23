@@ -2353,7 +2353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponRange: 1.5
   timeBetweenAttacks: 1
-  DamageAmounth: 5
+  DamageAmounth: 10
 --- !u!95 &7872118796227151719
 Animator:
   serializedVersion: 3
