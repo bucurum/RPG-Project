@@ -8,7 +8,6 @@ namespace RPG.Movement
     public class Mover : MonoBehaviour, IAction
     {   
         [SerializeField] float maxSpeed = 6f;
-
         NavMeshAgent navMeshAgent;
         Animator animator;
         Health health;
