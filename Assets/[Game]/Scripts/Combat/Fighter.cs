@@ -45,6 +45,7 @@ namespace RPG.Combat
         
         public void Cancel()
         {
+            mover.Cancel();
             TriggerStopAttack();
             target = null;
         }

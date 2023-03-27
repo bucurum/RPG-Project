@@ -7,13 +7,14 @@ namespace RPG.Cinematics
 {
     public class CinematicTrigger : MonoBehaviour
     {
+        bool isTriggered = false;
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "Player")
+            if (other.gameObject.tag == "Player" && !isTriggered)
             {
                 GetComponent<PlayableDirector>().Play();
+                isTriggered = true;
             }
-            //TODO: When the player trigger make the player unmoveable or stand where the player is on current position
         }
     }
 }
