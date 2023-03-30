@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6ee13bf7ec6cdd64da19597c405af518, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2194,7 +2194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2143882544}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &1651756620 stripped
 Transform:
@@ -2283,23 +2283,31 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2143882544}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 881853786, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
+      propertyPath: isNextLevelPortal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112127881079660817, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
+      propertyPath: buildIndex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2274610592273253053, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2274610592273253053, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44.170998
+      value: 47.8
       objectReference: {fileID: 0}
     - target: {fileID: 2274610592273253053, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 5.5286245
       objectReference: {fileID: 0}
     - target: {fileID: 2274610592273253053, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.605999
+      value: -18.9
       objectReference: {fileID: 0}
     - target: {fileID: 2274610592273253053, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2329,17 +2337,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4843338919660514882, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843338919660514882, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843338919660514882, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.63
+      objectReference: {fileID: 0}
     - target: {fileID: 5565084375161054610, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
       propertyPath: m_Name
       value: GatePortal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
---- !u!4 &1908547011 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2274610592273253053, guid: 822be1a6d208a3d4e9c614049ac87bb3, type: 3}
-  m_PrefabInstance: {fileID: 1908547010}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1921594418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2790,8 +2805,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112856973}
-  m_LocalRotation: {x: 0.27421585, y: 0.2551796, z: 0.07518398, w: -0.92414093}
-  m_LocalPosition: {x: 30.835747, y: -20.09899, z: -30.150612}
+  m_LocalRotation: {x: 0.23841354, y: 0.5997285, z: 0.18998475, w: -0.73985845}
+  m_LocalPosition: {x: 26.885918, y: -4.6805863, z: -12.793539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 930411806}
@@ -2889,7 +2904,6 @@ Transform:
   - {fileID: 1588281897}
   - {fileID: 2010224275}
   - {fileID: 1367137463}
-  - {fileID: 1908547011}
   - {fileID: 1627170423}
   m_Father: {fileID: 0}
   m_RootOrder: 1
