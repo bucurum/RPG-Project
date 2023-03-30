@@ -2230,6 +2230,7 @@ GameObject:
   - component: {fileID: 7872118796227151719}
   - component: {fileID: 829466770772482091}
   - component: {fileID: 687538999}
+  - component: {fileID: 1909183508}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2327,6 +2328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039582b3ebecffb4ca32825c67775c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 6
 --- !u!114 &6809826381704824793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2398,6 +2400,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoint: 100
+--- !u!136 &1909183508
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917616067677045395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &8969654875261271131
 GameObject:
   m_ObjectHideFlags: 0
