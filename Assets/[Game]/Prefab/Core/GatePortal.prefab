@@ -105,5 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e29ee9b14a4cd4cb867bdd93521d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNextLevelPortal: 0
   spawnPoint: {fileID: 4843338919660514882}
   buildIndex: -1
+  destination: 0
+  fadeOutTime: 1
+  fadeInTime: 0.6
+  fadeWaitTime: 0.2
