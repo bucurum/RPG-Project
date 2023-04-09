@@ -26,6 +26,7 @@ namespace RPG.Core
         {
             GameObject persistentObject = Instantiate(persistentObjectPrefab, transform.position, Quaternion.identity);
             DontDestroyOnLoad(persistentObject);
+            hasSpawned = true;
         }
     }
 
