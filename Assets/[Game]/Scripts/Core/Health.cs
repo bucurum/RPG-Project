@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using RPG.Core;
 using UnityEngine;
+using RPG.Saving;
 
 namespace RPG.Combat
 {
-    public class Health : MonoBehaviour
+    public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float healthPoint = 100f;
         private bool isDeath;
@@ -13,6 +14,7 @@ namespace RPG.Combat
         {
             return isDeath;
         }
+
         public void takeDamage(float damage)
         {
             healthPoint = Mathf.Max(healthPoint - damage, 0); //this provides the healthPoint to down below to zero.
@@ -34,6 +36,19 @@ namespace RPG.Combat
             else
             {
                 return;
+            }
+        }
+
+        public object CaptureState()
+        {
+            return healthPoint;
+        }
+        public void RestoreState(object state)
+        {
+            healthPoint = (float)state;
+            if (healthPoint == 0)
+            {
+                Die();
             }
         }
     }
