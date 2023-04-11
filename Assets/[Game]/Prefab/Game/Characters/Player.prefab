@@ -2357,9 +2357,8 @@ MonoBehaviour:
   weaponRange: 1.5
   timeBetweenAttacks: 1
   DamageAmounth: 10
-  weaponPrefab: {fileID: 5797670320930095487, guid: 33f53c34708aecd4da822b04c4fd4657, type: 3}
   handTransform: {fileID: 4909135300444900213}
-  weaponOverride: {fileID: 22100000, guid: 7b51910c603ee9342b25478557b4be73, type: 2}
+  weapon: {fileID: 11400000, guid: db522bf43db91f04d902cc1d4b55e77d, type: 2}
 --- !u!95 &7872118796227151719
 Animator:
   serializedVersion: 3
