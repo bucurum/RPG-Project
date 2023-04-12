@@ -15,4 +15,4 @@ MonoBehaviour:
   weaponPrefab: {fileID: 0}
   animatorOverride: {fileID: 0}
   weaponRange: 2
-  DamageAmounth: 5
+  DamageAmounth: 3

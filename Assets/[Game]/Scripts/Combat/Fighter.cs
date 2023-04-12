@@ -9,9 +9,9 @@ namespace RPG.Combat
     {
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] Transform handTransform = null;
-        [SerializeField] Weapon weapon = null;
+        [SerializeField] Weapon defaultWeapon = null;
 
-
+        Weapon currentWeapon;
         Health target;
         Mover mover;
         Health health;
@@ -20,10 +20,7 @@ namespace RPG.Combat
         void Awake()
         {
             mover = GetComponent<Mover>();
-        }
-        void Start()
-        {
-            SpawnWeapon();
+            currentWeapon = defaultWeapon;
         }
         void Update()
         {
@@ -86,11 +83,11 @@ namespace RPG.Combat
             {
                 return;
             }
-            target.takeDamage(weapon.GetDamageAmounth());
+            target.takeDamage(currentWeapon.GetDamageAmounth());
         }
         private bool GetsInRange()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < weapon.GetWeaponRange();
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetWeaponRange();
         }
         
         public bool CanAttack(GameObject combatTarget)
@@ -108,9 +105,9 @@ namespace RPG.Combat
             target = combatTarget.GetComponent<Health>();
         }
 
-        private void SpawnWeapon()
+        public void EquipWeapon(Weapon weapon)
         {
-            if(weapon == null) return;
+            currentWeapon = weapon;
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(handTransform, animator);
         }

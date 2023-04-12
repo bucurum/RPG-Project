@@ -27,19 +27,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoint: 40
---- !u!114 &447755447277890893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29550748861514288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueIdentifier: 
 --- !u!114 &720633694094946868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +43,7 @@ MonoBehaviour:
   suspicionTime: 5
   patrolPath: {fileID: 0}
   waypointTolerance: 1
-  WaypointDwellTime: 3
+  WaypointDwellTime: 2
   patrolSpeedFraction: 0.2
 --- !u!114 &3865147086394124668
 MonoBehaviour:
@@ -109,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 1
   handTransform: {fileID: 3542633016371286514}
-  weapon: {fileID: 11400000, guid: 103743a94d77bda4c83b8dd34986de8d, type: 2}
+  defaultWeapon: {fileID: 11400000, guid: 103743a94d77bda4c83b8dd34986de8d, type: 2}
 --- !u!1001 &7273096885313331109
 PrefabInstance:
   m_ObjectHideFlags: 0
